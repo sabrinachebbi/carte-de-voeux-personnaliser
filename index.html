@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carte de Vœux Personnalisée</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 > une Carte de Vœux Personnalisée</h1>
+  <form id="cardForm">
+    <label class="text" for="message">Message de vœux</label><br>
+    <input type="text" id="message" name="message" required><br><br>
+
+    <label  class="text" for="fontSize">Taille de la police</label><br>
+    <input type="number" id="fontSize" name="fontSize" min="10" max="50" value="16" required><br><br>
+
+    <label class="text" for="textColor">Couleur du texte</label><br>
+    <input type="color" id="textColor" name="textColor" value="#000000" required><br><br>
+
+    <label class="text" for="bgColor">Couleur de l'arrière-plan</label><br>
+    <input type="color" id="bgColor" name="bgColor" value="#ffffff" required><br><br>
+
+    <label class="text" for="imageUrl">URL de l'image</label><br>
+    <input type="url" id="imageUrl" name="imageUrl" required><br><br>
+
+    <button id="btn" type="submit">Créer la Carte</button>
+  </form>
+
+  <div id="cardContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
